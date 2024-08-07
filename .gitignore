@@ -1,0 +1,35 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.sln.docstates
+
+# Ignore Resharper files
+_ReSharper*/
+
+# Ignore build artifacts
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.bak
+*.swp
+
+# Ignore macOS specific files
+.DS_Store
+
+# Ignore JetBrains Rider files
+.idea/
+*.sln.iml
+
+# Ignore benchmark artifacts
+BenchmarkDotNet.Artifacts/
