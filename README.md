@@ -1,9 +1,11 @@
-#How to speed up array sorting in C# by two times
+# How to speed up array sorting in C# by two times
 
-##TL;DR
+## TL;DR
 Try using [Span<T>](https://learn.microsoft.com/en-us/dotnet/api/system.span-1).
 
-##Details
+![Sort an array with and without Span<T>](./Images/sort-array-methods.png)
+
+## Details
 Using `Span<T>` can optimize the performance of sorting an array by eliminating the need for unnecessary memory allocations and copies.
 
 `Span<T>` provides a lightweight view into a contiguous region of memory, allowing you to work directly with the underlying data without creating additional arrays or buffers. This means that when sorting an array using `Span<T>`, you can avoid the overhead of creating temporary arrays or copying elements between arrays.
@@ -14,4 +16,6 @@ Additionally, `Span<T>` provides efficient slicing and indexing operations, allo
 
 Overall, by leveraging `Span<T>` in your sorting algorithms, you can achieve better performance by minimizing memory allocations, reducing copying overhead, and enabling efficient array manipulation operations.
 
-##Benchmarking summary
+## Benchmarking summary
+
+![Benchmarking summary](./Images/benchmark-summary.png)
